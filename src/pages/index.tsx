@@ -17,12 +17,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-white">
-        <EventCard icon="📲" eventName="CIS 4515" timeRange="9:30 am - 10:50 am" days="Monday, Tuesday, Wednesday"/>
-        <EventCard icon="📚" eventName="IH 0852" timeRange="11:00 am - 12:20 am" days="Tuesday, Thursday"/>
-        <EventCard icon="⚡" eventName="PHYS 1061" timeRange="9:20 am - 10:30 am" days="Tuesday, Thursday"/>
-        <EventCard icon="📊" eventName="CIS 2033" timeRange="12:00 pm - 12:50 pm" days="Monday, Wednesday, Friday"/>
-        <EventCard icon="🎉" eventName="CIS 3603" timeRange="5:30 pm - 8:00 pm" days="Monday"/>
-        <EventCard icon="🛠️" eventName="CIS 4515" timeRange="6:30 pm - 9:50 pm" days="Tuesday, Thursday, Friday"/>
+        <div className="flex flex-col items-center justify-center gap-4">
+          <EventCard icon="📲" eventName="CIS 4515" timeRange="9:30 am - 10:50 am" days="Monday, Tuesday, Wednesday"/>
+          <EventCard icon="📚" eventName="IH 0852" timeRange="11:00 am - 12:20 am" days="Tuesday, Thursday"/>
+          <EventCard icon="⚡" eventName="PHYS 1061" timeRange="9:20 am - 10:30 am" days="Tuesday, Thursday"/>
+          <EventCard icon="📊" eventName="CIS 2033" timeRange="12:00 pm - 12:50 pm" days="Monday, Wednesday, Friday"/>
+          <EventCard icon="🎉" eventName="CIS 3603" timeRange="5:30 pm - 8:00 pm" days="Monday"/>
+          <EventCard icon="🛠️" eventName="CIS 4515" timeRange="6:30 pm - 9:50 pm" days="Tuesday, Thursday, Friday"/>
+        </div>
         {/* <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
             Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
