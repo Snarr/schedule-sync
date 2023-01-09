@@ -1,4 +1,4 @@
-import Twemoji from 'react-twemoji';
+// import Twemoji from 'react-twemoji';
 
 function EventCard({
   icon,
