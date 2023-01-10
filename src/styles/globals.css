@@ -7,6 +7,10 @@
   height: 3rem;
 }
 
+html, body, #__next {
+  height: 100%;
+}
+
 /* * { 
   outline: 1px solid red;
   outline-offset: -1px;
