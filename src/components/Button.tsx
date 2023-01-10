@@ -5,7 +5,7 @@ function Button({
   onClick
   }: {
     children: string,
-    onClick: MouseEventHandler<HTMLDivElement> | undefined;
+    onClick?: MouseEventHandler<HTMLDivElement> | undefined;
   }) {
 
   return (
