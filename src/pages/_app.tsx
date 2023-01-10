@@ -7,6 +7,7 @@ import { api } from "../utils/api";
 import "../styles/globals.css";
 
 import { Inter } from '@next/font/google'
+import Layout from "../components/Layout";
 const inter = Inter({ subsets: ['latin'] })
 
 const MyApp: AppType<{ session: Session | null }> = ({
@@ -21,7 +22,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
         }
       `}</style>
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </SessionProvider>
     </>
   );
