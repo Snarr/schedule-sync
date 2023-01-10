@@ -5,7 +5,6 @@ import Head from "next/head";
 
 // import { api } from "../utils/api";
 import EventCard from "../components/EventCard";
-import Button from "../components/Button";
 import { useState } from "react";
 
 const EventCreator = (
