@@ -12,26 +12,11 @@ function EventCard({
 
   return (
     <>
-      <div key="calendar-event" className="w-full h-fit px-6 py-4 bg-white flex flex-row gap-3 items-center border-b-2 select-none">
-        {/* <Twemoji options={{ className: 'twemoji' }}>
-          {icon}
-        </Twemoji> */}
-        {/* <div>
-          {icon}
-        </div> */}
-        <div key="details" className="flex flex-col items-start">
-          <div key="times" className="flex flex-col justify-start items-start gap-2">
-            <div key="name" className="font-bold text-xl">
-              {name}
-            </div>
-            <div key="time-range" className="font-normal">
-              <Status color={busy ? "bg-red-100" : "bg-green-100"} title={busy ? "Busy" : "Available"} />
-            </div>
-          </div>
-          {/* <div key="days" className="text-gray-600 font-normal text-xs">
-            {days}
-          </div> */}
+      <div key="calendar-event" className="w-full h-fit px-6 py-4 bg-white flex flex-col gap-2 justify-center items-start border-b-2 select-none">
+        <div key="name" className="font-bold text-2xl">
+          {name}
         </div>
+        <Status color={busy ? "bg-red-100" : "bg-green-500"} title={busy ? "Busy" : "Available"} />
       </div>
     </>
   )

@@ -9,11 +9,12 @@ function Status({
   }) {
 
   return (
-    <>
-      <div className={"rounded-full " + color}>
+    <div className="flex flex-row justify-start items-center gap-2 text-sm">
+      <div className={"w-4 h-4 rounded-full " + color}/>
+      <div>
         {title}
       </div>
-    </>
+    </div>
   )
 }
 
