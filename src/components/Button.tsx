@@ -1,10 +1,10 @@
-import type { MouseEventHandler } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
 
 function Button({
   children,
   onClick
   }: {
-    children: string,
+    children: ReactNode,
     onClick?: MouseEventHandler<HTMLDivElement> | undefined;
   }) {
 

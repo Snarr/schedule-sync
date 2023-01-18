@@ -5,33 +5,8 @@ import Head from "next/head";
 
 // import { api } from "../utils/api";
 import Friend from "../components/Friend";
-import { useState } from "react";
-
-const EventCreator = (
-  icon: string,
-  eventName: string,
-  timeRange: string,
-  days: string
-) => {
-  return {icon, eventName, timeRange, days}
-}
 
 const Schedule: NextPage = () => {
-  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
-  // const [events, setEvents] = useState([
-  //   EventCreator("📲", "CIS 4515", "9:30 am - 10:50 am", "Monday, Tuesday, Wednesday"),
-  //   EventCreator("📚", "IH 0852", "11:00 am - 12:20 am", "Tuesday, Thursday"),
-  //   EventCreator("⚡", "PHYS 1061", "9:20 am - 10:30 am", "Tuesday, Thursday"),
-  //   EventCreator("📊", "CIS 2033", "12:00 pm - 12:50 pm", "Monday, Wednesday, Friday"),
-  //   EventCreator("🎉", "CIS 3603", "5:30 pm - 8:00 pm", "Monday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  //   EventCreator("🛠️", "Work", "6:30 pm - 9:50 pm", "Tuesday, Thursday, Friday"),
-  // ]);
 
   return (
     <>
