@@ -6,7 +6,7 @@ import Head from "next/head";
 // import { api } from "../utils/api";
 import Friend from "../components/Friend";
 
-const Friends: NextPage = () => {
+const Create: NextPage = () => {
 
   return (
     <>
@@ -16,15 +16,22 @@ const Friends: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex h-full w-full flex-col items-center justify-start bg-white gap-2 overflow-hidden">
-        <div className="flex h-full w-full flex-col items-center justify-start relative overflow-scroll">
-          {/* {events.map((event) => {
-            return <Friend key={event.eventName} {...event}></Friend>
-          })} */}
-          <Friend name={"Jacob Snarr"} busy={false} ></Friend>
-        </div>
+        <form className="flex flex-col">
+          <label> Name </label>
+          <input type="text"></input>
+
+          <label> Emoji </label>
+          <input type=""></input> {"add emoji picker later"}
+
+          <label> Date </label>
+          <input type="date"></input>
+          
+          <label> Repeating? </label>
+          <input type="checkbox"></input>
+        </form>
       </main>
     </>
   );
 };
 
-export default Friends;
+export default Create;
